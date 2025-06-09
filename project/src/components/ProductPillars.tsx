@@ -8,7 +8,6 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-import log from '../assets/gmsLogo.png';
 import cost_page from '../assets/cost_assessment.png';
 import vul_scan from '../assets/vul_page.png';
 import compliance from '../assets/compliance.png';
@@ -31,7 +30,8 @@ const ProductPillars: React.FC = () => {
       icon: TrendingDown,
       secondaryIcon: DollarSign,
       imageLeft: true,
-      image: cost_page
+      image: cost_page,
+      link: "/cost-optimization"
     },
     {
       id: 2,
@@ -49,7 +49,8 @@ const ProductPillars: React.FC = () => {
       icon: Shield,
       secondaryIcon: AlertTriangle,
       imageLeft: false,
-      image: vul_scan
+      image: vul_scan,
+      link: "/vulnerability"
     },
     {
       id: 3,
@@ -67,7 +68,8 @@ const ProductPillars: React.FC = () => {
       icon: FileCheck,
       secondaryIcon: CheckCircle,
       imageLeft: true,
-      image: compliance
+      image: compliance,
+      link: "/Compliance-Checks"
     }
   ];
 
@@ -124,9 +126,12 @@ const ProductPillars: React.FC = () => {
                   </div>
 
                   <div className="pt-6">
-                    <button className="bg-gradient-to-r from-brand-blue to-brand-orange text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                    <a
+                      href={pillar.link}
+                      className="inline-block bg-gradient-to-r from-brand-blue to-brand-orange text-white px-8 py-3 rounded-full font-semibold hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300"
+                    >
                       Learn More
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

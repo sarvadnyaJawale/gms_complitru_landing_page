@@ -7,20 +7,13 @@ const Hero: React.FC = () => {
     <section className="relative bg-gradient-to-br from-blue-50 to-white py-20 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="max-w-7xl mx-auto text-center relative z-10">
-        {/* Logo Section */}
-        <div className="flex justify-center items-center mb-8">
-          <img src={log} alt="GMS Logo" className="h-16 w-auto mr-4" />
-          <div className="bg-gradient-to-r from-brand-blue to-brand-orange p-4 rounded-2xl shadow-xl">
-            <Shield className="w-12 h-12 text-white" />
-          </div>
-        </div>
-        
+        {/* Logo Section - PNG only, centered, sized to heading */}
+        <img src={log} alt="GMS Logo" className="mx-auto mb-6 max-w-[320px] w-full h-auto" />
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           <span className="text-brand-blue">Compli</span>
           <span className="text-brand-orange">Tru</span>{' '}
           <span className="text-brand-blue">AI</span>
         </h1>
-
         <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
           The AI-powered cloud compliance platform that transforms how enterprises manage 
           <span className="text-brand-orange font-semibold"> security, costs, and compliance</span> across their cloud infrastructure.
