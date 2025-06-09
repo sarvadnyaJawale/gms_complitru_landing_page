@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Cloud, TrendingUp } from 'lucide-react';
-import log from '../assets/gmsLogo.png';
+import log from '/assets/images/gmsLogo.png';
 
 const Hero: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="max-w-7xl mx-auto text-center relative z-10">
         {/* Logo Section - PNG only, centered, sized to heading */}
-        <img src={log} alt="GMS Logo" className="mx-auto mb-6 max-w-[320px] w-full h-auto" />
+        <img src="/static/assets/images/gmsLogo.png" alt="GMS Logo" className="mx-auto mb-6 max-w-[320px] w-full h-auto" />
         <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 leading-tight">
           <span className="text-brand-blue">Compli</span>
           <span className="text-brand-orange">Tru</span>{' '}

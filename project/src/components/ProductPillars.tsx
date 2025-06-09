@@ -8,9 +8,9 @@ import {
   CheckCircle
 } from 'lucide-react';
 
-import cost_page from '../assets/cost_assessment.png';
-import vul_scan from '../assets/vul_page.png';
-import compliance from '../assets/compliance.png';
+import cost_page from '/assets/images/cost_assessment.png';
+import vul_scan from '/assets/images/vul_page.png';
+import compliance from '/assets/images/compliance.png';
 
 const ProductPillars: React.FC = () => {
   const pillars = [
@@ -30,7 +30,7 @@ const ProductPillars: React.FC = () => {
       icon: TrendingDown,
       secondaryIcon: DollarSign,
       imageLeft: true,
-      image: cost_page,
+      image: "/static/assets/images/cost_assessment.png",
       link: "/cost-optimization"
     },
     {
@@ -49,7 +49,7 @@ const ProductPillars: React.FC = () => {
       icon: Shield,
       secondaryIcon: AlertTriangle,
       imageLeft: false,
-      image: vul_scan,
+      image: "/static/assets/images/vul_page.png",
       link: "/vulnerability"
     },
     {
@@ -68,7 +68,7 @@ const ProductPillars: React.FC = () => {
       icon: FileCheck,
       secondaryIcon: CheckCircle,
       imageLeft: true,
-      image: compliance,
+      image: "/static/assets/images/compliance.png",
       link: "/Compliance-Checks"
     }
   ];
